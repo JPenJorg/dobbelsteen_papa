@@ -1,3 +1,4 @@
+let Nummer = 0
 input.onGesture(Gesture.Shake, function () {
     Nummer = randint(0, 5 + 1)
     if (Nummer == 1) {
@@ -52,11 +53,3 @@ input.onGesture(Gesture.Shake, function () {
     basic.pause(1500)
     basic.clearScreen()
 })
-let Nummer = 0
-basic.showLeds(`
-    # . # . #
-    # # # . .
-    # . # . #
-    . . . . #
-    . . . . #
-    `)
